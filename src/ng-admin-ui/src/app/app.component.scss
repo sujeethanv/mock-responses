@@ -1,0 +1,28 @@
+button.primary{
+  background-color: #69f0ae;
+  color: black;
+}
+mat-sidenav-container {
+  position: fixed;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+  .main-actions {
+    display:flex;
+    justify-content: space-between;
+  }
+  .text {
+    padding-bottom: 12px;
+  }
+  mat-sidenav {
+    min-width: 280px;
+    .nav-button {
+      padding: 20px 0;
+      width: 100%;
+    }
+  }
+  mat-sidenav-content {
+    margin: 32px;
+  }
+}

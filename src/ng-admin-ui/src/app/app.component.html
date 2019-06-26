@@ -1,0 +1,48 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon aria-label="Hamburger Menu icon">menu</mat-icon>
+  </button>
+  <h1>
+    Mock Response
+  </h1>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="push">
+      <mat-toolbar color="accent">
+        <h2>
+          Quick Links
+        </h2>
+      </mat-toolbar>
+      <button mat-button class="nav-button"> 
+        <mat-icon>settings</mat-icon> &nbsp;
+        Mock Responses 
+      </button>
+      <button mat-button class="nav-button"> 
+        <mat-icon>desktop_mac</mat-icon> &nbsp;
+        Activate By Name 
+      </button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="main-actions">
+      <div>
+        <div class="text">
+          The following pattern-matcing requests are intercepted and served by Mock Responses.
+        </div>
+        <button mat-stroked-button class="primary">
+          <mat-icon>add</mat-icon> &nbsp;
+          Create New Mock Response
+        </button>
+      </div>
+      <div class="search">
+        <button mat-button><mat-icon>search</mat-icon></button>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Search">
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<router-outlet></router-outlet>
